@@ -27,7 +27,6 @@ public class SuperAdapter<E, VH extends SuperViewHolder<E>> extends RecyclerView
         mVhClass = vhClass;
     }
 
-    @SuppressWarnings("unchecked cast")
     @Override
     public VH onCreateViewHolder(ViewGroup parent, int viewType) {
         if (mContext == null) {
@@ -61,9 +60,8 @@ public class SuperAdapter<E, VH extends SuperViewHolder<E>> extends RecyclerView
             return (VH) constructor.newInstance(parent);
         } catch (NoSuchMethodException | IllegalAccessException |
                 InstantiationException | InvocationTargetException e) {
-            e.printStackTrace();
+            throw new RuntimeException("找不到相关 ViewHolder ,查看是否已经添加混淆代码");
         }
-        return null;
     }
 
     @Override

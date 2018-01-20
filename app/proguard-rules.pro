@@ -20,5 +20,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.yidont.recyclerviewadapter.bean.** { *; }
--keep class com.yidont.recyclerviewadapter.holder.** { *; }
+-keep class * extends com.yidont.recyclerviewadapter.base.SuperViewHolder {
+    public <methods>;
+}
