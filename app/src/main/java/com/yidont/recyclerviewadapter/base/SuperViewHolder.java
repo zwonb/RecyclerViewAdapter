@@ -1,5 +1,6 @@
 package com.yidont.recyclerviewadapter.base;
 
+import android.content.Context;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
@@ -18,10 +19,12 @@ import android.widget.TextView;
 
 public abstract class SuperViewHolder<E> extends RecyclerView.ViewHolder {
 
+    protected final Context mContext;
     private SparseArray<View> mSparseArray;
 
     public SuperViewHolder(ViewGroup parent, @LayoutRes int itemLayout) {
         super(LayoutInflater.from(parent.getContext()).inflate(itemLayout, parent, false));
+        mContext = parent.getContext();
         if (mSparseArray == null) {
             mSparseArray = new SparseArray<>();
         }
@@ -57,6 +60,6 @@ public abstract class SuperViewHolder<E> extends RecyclerView.ViewHolder {
         return this;
     }
 
-    protected abstract void setDate(E bean);
+    protected abstract void setDate(E bean, int position);
 
 }

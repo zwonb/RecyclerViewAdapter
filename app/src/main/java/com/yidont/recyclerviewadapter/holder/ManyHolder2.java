@@ -19,7 +19,7 @@ public class ManyHolder2 extends SuperViewHolder<ManyBean> {
     }
 
     @Override
-    protected void setDate(ManyBean bean) {
+    protected void setDate(ManyBean bean, int position) {
         // 设置你的数据
         setImageResource(R.id.item2_img, bean.getImg());
     }

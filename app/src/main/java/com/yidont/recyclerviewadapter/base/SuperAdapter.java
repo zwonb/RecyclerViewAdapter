@@ -37,7 +37,7 @@ public class SuperAdapter<E, VH extends SuperViewHolder<E>> extends RecyclerView
 
     @Override
     public void onBindViewHolder(VH holder, @SuppressLint("RecyclerView") final int position) {
-        holder.setDate(mList.get(position));
+        holder.setDate(mList.get(position), position);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +77,7 @@ public class SuperAdapter<E, VH extends SuperViewHolder<E>> extends RecyclerView
         mOnItemClickListener = onItemClickListener;
     }
 
-    interface OnItemClickListener {
+    public interface OnItemClickListener {
         void onItemClick(int position);
     }
 

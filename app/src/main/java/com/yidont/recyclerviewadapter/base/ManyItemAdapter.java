@@ -1,6 +1,5 @@
 package com.yidont.recyclerviewadapter.base;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Size;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import java.util.List;
 
 public class ManyItemAdapter<E extends ManyItemType, VH extends SuperViewHolder<E>> extends SuperAdapter<E, VH> {
 
-    protected Context mContext;
     private final Class[] mVhClass;
 
     public ManyItemAdapter(@NonNull List<E> listData, @Size(min = 2) Class... vhClass) {
@@ -34,7 +32,7 @@ public class ManyItemAdapter<E extends ManyItemType, VH extends SuperViewHolder<
         if (mContext == null) {
             mContext = parent.getContext();
         }
-        return getViewHolder(parent, mVhClass[viewType]);
+        return super.getViewHolder(parent, mVhClass[viewType]);
     }
 
 }

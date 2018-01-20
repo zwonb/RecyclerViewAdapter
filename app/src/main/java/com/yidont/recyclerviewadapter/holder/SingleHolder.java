@@ -18,7 +18,7 @@ public class SingleHolder extends SuperViewHolder<SingleBean> {
     }
 
     @Override
-    protected void setDate(SingleBean bean) {
+    protected void setDate(SingleBean bean, int position) {
         // 设置你的数据
         setText(R.id.item_text, bean.getString());
     }

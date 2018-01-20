@@ -18,7 +18,7 @@ public class ManyHolder1 extends SuperViewHolder<ManyBean> {
     }
 
     @Override
-    protected void setDate(ManyBean bean) {
+    protected void setDate(ManyBean bean, int position) {
         // 设置你的数据
         setText(R.id.item1_text, bean.getStr());
     }
