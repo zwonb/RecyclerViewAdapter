@@ -1,10 +1,8 @@
-package com.yidont.recyclerviewadapter.bean;
-
-import com.yidont.recyclerviewadapter.base.ManyItemAdapter;
+package com.zwonb.rvadapter;
 
 /**
  * RecyclerView 多种布局的bean需要实现这个接口
- * Created by zwonb on 2018/1/19.
+ * Created by zwonb on 2018/1/20.
  */
 
 public interface ManyItemType {

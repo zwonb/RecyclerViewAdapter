@@ -1,4 +1,4 @@
-package com.yidont.recyclerviewadapter.bean;
+package com.zwonb.recyclerviewadapter.bean;
 
 /**
  * 单种类型的bean

@@ -1,10 +1,10 @@
-package com.yidont.recyclerviewadapter.holder;
+package com.zwonb.recyclerviewadapter.holder;
 
 import android.view.ViewGroup;
 
-import com.yidont.recyclerviewadapter.R;
-import com.yidont.recyclerviewadapter.base.SuperViewHolder;
-import com.yidont.recyclerviewadapter.bean.SingleBean;
+import com.zwonb.recyclerviewadapter.R;
+import com.zwonb.recyclerviewadapter.bean.SingleBean;
+import com.zwonb.rvadapter.SuperViewHolder;
 
 /**
  * 单种类型的 holder
@@ -18,7 +18,7 @@ public class SingleHolder extends SuperViewHolder<SingleBean> {
     }
 
     @Override
-    protected void setDate(SingleBean bean, int position) {
+    protected void setDate(SingleBean bean) {
         // 设置你的数据
         setText(R.id.item_text, bean.getString());
     }

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.yidont.recyclerviewadapter.MainActivity">
+    tools:context="com.zwonb.recyclerviewadapter.MainActivity">
 
     <Button
         android:layout_width="wrap_content"

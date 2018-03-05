@@ -1,10 +1,10 @@
-package com.yidont.recyclerviewadapter.holder;
+package com.zwonb.recyclerviewadapter.holder;
 
 import android.view.ViewGroup;
 
-import com.yidont.recyclerviewadapter.R;
-import com.yidont.recyclerviewadapter.base.SuperViewHolder;
-import com.yidont.recyclerviewadapter.bean.ManyBean;
+import com.zwonb.recyclerviewadapter.R;
+import com.zwonb.recyclerviewadapter.bean.ManyBean;
+import com.zwonb.rvadapter.SuperViewHolder;
 
 
 /**
@@ -19,7 +19,7 @@ public class ManyHolder2 extends SuperViewHolder<ManyBean> {
     }
 
     @Override
-    protected void setDate(ManyBean bean, int position) {
+    protected void setDate(ManyBean bean) {
         // 设置你的数据
         setImageResource(R.id.item2_img, bean.getImg());
     }

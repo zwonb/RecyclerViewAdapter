@@ -1,15 +1,15 @@
-package com.yidont.recyclerviewadapter;
+package com.zwonb.recyclerviewadapter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.yidont.recyclerviewadapter.base.ManyItemAdapter;
-import com.yidont.recyclerviewadapter.base.SuperViewHolder;
-import com.yidont.recyclerviewadapter.bean.ManyBean;
-import com.yidont.recyclerviewadapter.holder.ManyHolder1;
-import com.yidont.recyclerviewadapter.holder.ManyHolder2;
+import com.zwonb.recyclerviewadapter.bean.ManyBean;
+import com.zwonb.recyclerviewadapter.holder.ManyHolder1;
+import com.zwonb.recyclerviewadapter.holder.ManyHolder2;
+import com.zwonb.rvadapter.ManyItemAdapter;
+import com.zwonb.rvadapter.SuperViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;

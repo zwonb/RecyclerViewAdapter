@@ -1,4 +1,6 @@
-package com.yidont.recyclerviewadapter.bean;
+package com.zwonb.recyclerviewadapter.bean;
+
+import com.zwonb.rvadapter.ManyItemType;
 
 /**
  * 第一种类型的bean

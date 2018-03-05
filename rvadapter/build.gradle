@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    api 'com.android.support:recyclerview-v7:27.1.0'
+}
+
+publish {
+    userOrg = 'zwonb'//bintray.com用户名
+    groupId = 'com.zwonb'//jcenter上的路径
+    artifactId = 'rvadapter'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'RecyclerView Simple Adapter'//描述，不重要
+    website = 'https://github.com/zwonb/RecyclerViewAdapter'//网站，不重要；github上的地址
+}

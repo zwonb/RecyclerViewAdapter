@@ -93,7 +93,7 @@ recyclerView.setAdapter(adapter);
 
 ## 混淆规则
 ```java
--keep class * extends com.yidont.recyclerviewadapter.base.SuperViewHolder {
+-keep class * extends com.zwonb.rvadapter.SuperViewHolder {
     public <methods>;
 }
 

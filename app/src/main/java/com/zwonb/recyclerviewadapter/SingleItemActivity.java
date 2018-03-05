@@ -1,14 +1,14 @@
-package com.yidont.recyclerviewadapter;
+package com.zwonb.recyclerviewadapter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.yidont.recyclerviewadapter.base.SuperAdapter;
-import com.yidont.recyclerviewadapter.base.SuperViewHolder;
-import com.yidont.recyclerviewadapter.bean.SingleBean;
-import com.yidont.recyclerviewadapter.holder.SingleHolder;
+import com.zwonb.recyclerviewadapter.bean.SingleBean;
+import com.zwonb.recyclerviewadapter.holder.SingleHolder;
+import com.zwonb.rvadapter.SuperAdapter;
+import com.zwonb.rvadapter.SuperViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;

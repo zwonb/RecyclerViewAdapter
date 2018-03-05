@@ -1,4 +1,4 @@
-package com.yidont.recyclerviewadapter;
+package com.zwonb.recyclerviewadapter;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,10 +1,10 @@
-package com.yidont.recyclerviewadapter.holder;
+package com.zwonb.recyclerviewadapter.holder;
 
 import android.view.ViewGroup;
 
-import com.yidont.recyclerviewadapter.R;
-import com.yidont.recyclerviewadapter.base.SuperViewHolder;
-import com.yidont.recyclerviewadapter.bean.ManyBean;
+import com.zwonb.recyclerviewadapter.R;
+import com.zwonb.recyclerviewadapter.bean.ManyBean;
+import com.zwonb.rvadapter.SuperViewHolder;
 
 /**
  * many item holder1
@@ -18,7 +18,7 @@ public class ManyHolder1 extends SuperViewHolder<ManyBean> {
     }
 
     @Override
-    protected void setDate(ManyBean bean, int position) {
+    protected void setDate(ManyBean bean) {
         // 设置你的数据
         setText(R.id.item1_text, bean.getStr());
     }

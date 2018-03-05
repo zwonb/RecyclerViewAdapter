@@ -1,25 +1,22 @@
-package com.yidont.recyclerviewadapter.base;
+package com.zwonb.rvadapter;
 
 import android.support.annotation.NonNull;
-import android.support.annotation.Size;
 import android.view.ViewGroup;
-
-import com.yidont.recyclerviewadapter.bean.ManyItemType;
 
 import java.util.List;
 
 /**
  * RecyclerView 多种布局的适配器
- * Created by zwonb on 2018/1/19.
+ * Created by zwonb on 2018/1/20.
  */
 
 public class ManyItemAdapter<E extends ManyItemType, VH extends SuperViewHolder<E>> extends SuperAdapter<E, VH> {
 
-    private final Class[] mVhClass;
+    private final Class[] mVHClass;
 
-    public ManyItemAdapter(@NonNull List<E> listData, @Size(min = 2) Class... vhClass) {
-        super(listData, vhClass[0]);
-        mVhClass = vhClass;
+    public ManyItemAdapter(@NonNull List<E> listData, @NonNull Class... vHClass) {
+        super(listData, vHClass[0]);
+        mVHClass = vHClass;
     }
 
     @Override
@@ -27,12 +24,13 @@ public class ManyItemAdapter<E extends ManyItemType, VH extends SuperViewHolder<
         return getData().get(position).getItemViewType();
     }
 
+    @NonNull
     @Override
     public VH onCreateViewHolder(ViewGroup parent, int viewType) {
         if (mContext == null) {
             mContext = parent.getContext();
         }
-        return super.getViewHolder(parent, mVhClass[viewType]);
+        return super.getViewHolder(parent, mVHClass[viewType]);
     }
 
 }
