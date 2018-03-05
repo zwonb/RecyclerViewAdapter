@@ -28,8 +28,8 @@ dependencies {
 }
 
 publish {
-    userOrg = 'zwonb'//bintray.com用户名
-    groupId = 'com.zwonb'//jcenter上的路径
+    userOrg = 'yidont'//bintray.com用户名
+    groupId = 'lib.rvadapter'//jcenter上的路径
     artifactId = 'rvadapter'//项目名称
     publishVersion = '1.0.0'//版本号
     desc = 'RecyclerView Simple Adapter'//描述，不重要
