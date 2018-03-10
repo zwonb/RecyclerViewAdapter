@@ -1,6 +1,10 @@
 # RecyclerViewAdapter
+
+```java
+implementation "com.zhouyb:rvadapter:1.0.0"
+```
 简单的 Recyclerview Adapter，不需要新建Adapter适配器，直接新建一个ViewHolder即可。
-数据设置全部都在```java ViewHolder.setDate(E) ```里面完成。支持多种ItemType！
+数据设置全部都在` ViewHolder.setDate(E) `里面完成。支持多种ItemType！
 
 ## 使用
 
