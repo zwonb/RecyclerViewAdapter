@@ -1,7 +1,9 @@
 # RecyclerViewAdapter
 
+[ ![Download](https://api.bintray.com/packages/zhouyb/maven/rvadapter/images/download.svg) ](https://bintray.com/zhouyb/maven/rvadapter/_latestVersion)
+
 ```java
-implementation "com.zhouyb:rvadapter:1.0.0"
+implementation "com.zhouyb:rvadapter:<last-version>"
 ```
 简单的 Recyclerview Adapter，不需要新建Adapter适配器，直接新建一个ViewHolder即可。
 数据设置全部都在` ViewHolder.setDate(E) `里面完成。支持多种ItemType！
