@@ -1,6 +1,6 @@
 # RecyclerViewAdapter
 
-[ ![Download](https://api.bintray.com/packages/zhouyb/maven/rvadapter/images/download.svg) ](https://bintray.com/zhouyb/maven/rvadapter/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/zhouyb/maven/rvadapter/images/download.svg) ](https://bintray.com/zwonb/maven/rvadapter/_latestVersion)
 
 ```java
 implementation "com.zhouyb:rvadapter:<last-version>"
